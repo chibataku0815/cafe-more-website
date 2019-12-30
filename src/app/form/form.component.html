@@ -1,9 +1,16 @@
 <div class="form bg-dark">
   <div class="container">
-    <div class="sub-title -ja text-white">お問い合わせ</div>
-    <h1 class="title mb-5">
-      <span class="text-white">contact</span>
-    </h1>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="sub-title -ja text-white">お問い合わせ</div>
+        <h1 class="title mb-5">
+          <span class="text-white">contact</span>
+        </h1>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="sub-title -ja text-white mt-md-5 mb-5">出店場所や出店依頼・ご質問などお気軽にご相談ください</div>
+      </div>
+    </div>
     <form [formGroup]="formGroup" (validSubmit)="onSubmit()" class="row">
       <div class="col-12">
         <div class="form-group">
@@ -19,7 +26,7 @@
       </div>
       <div class="col-12">
         <div class="form-group">
-          <label class="text-dark-lighten-1" for="memo">内容詳細</label>
+          <label class="text-dark-lighten-1" for="memo">Contents</label>
           <textarea id="memo" class="form-control" name="memo" rows="10" cols="30" formControlName="DetailContent"></textarea>
         </div>
       </div>
@@ -32,7 +39,8 @@
         </div>
       </div>
     </form>
-    <div class="form-img-section">
+  </div>
+  <div class="form-img-section">
 
-    </div>
+  </div>
 </div>

@@ -24,6 +24,14 @@ body {
   line-height: 1.4;
   font-feature-settings: "palt";
   z-index: 10;
+
+  &.-big {
+    font-size: 120px;
+
+    @include media-breakpoint-down(lg)  {
+      font-size: 60px;
+    }
+  }
 }
 
 .sub-title {
@@ -33,6 +41,14 @@ body {
 
   &.-ja {
     letter-spacing: 5px;
+  }
+
+  &.-big {
+    font-size: 32px;
+
+    @include media-breakpoint-down(lg)  {
+      font-size: 20px;
+    }
   }
 }
 
