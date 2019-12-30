@@ -1,16 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import * as WebFont from 'webfontloader';
+import { environment } from '@env/environment';
+
+console.log('test in');
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent implements OnInit {
   title = 'cafe-more-websaite';
 
   constructor(private meta: Meta) { }
+
+  debug(): void {
+    const chiba = window;
+    console.log(chiba);
+  }
 
   ngOnInit() {
     this.meta.addTags([
@@ -22,10 +32,17 @@ export class AppComponent implements OnInit {
     WebFont.load({
       custom: {
         families: [
-          'M PLUS Rounded 1c'
+          'Noto Sans JP',
+          'Oswald'
         ],
-        urls: ['https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c']
+        urls: [
+          'https://fonts.googleapis.com/css?family=Noto+Sans+JP',
+          'https://fonts.googleapis.com/css?family=Oswald&display=swap'
+        ]
       }
     });
   }
 }
+
+console.log(environment);
+

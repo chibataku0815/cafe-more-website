@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~reset-css/sass/reset';
+@import './assets/scss/base';
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family:  'Noto Sans JP', "游ゴシック体",YuGothic,"游ゴシック","Yu Gothic","メイリオ",sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.title {
+  position: relative;
+  font-family:  'Oswald';
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.4;
+  font-feature-settings: "palt";
+  z-index: 10;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-feature-settings: "palt";
+
+  &.-ja {
+    letter-spacing: 5px;
+  }
+}
+
+.text-marker {
+  position: relative;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    padding: 3px 5px;
+    width: 100%;
+    height: 45px;
+    background: white;
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+  }
+}
+
+
+.kerning {
+  letter-spacing: 5px;
+}

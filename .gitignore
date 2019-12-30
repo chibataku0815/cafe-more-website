@@ -46,3 +46,10 @@ Thumbs.db
 # dist file
 /functions/dist
 /.firebase/**
+
+/.vscode/**
+
+launch.json
+
+# environments
+src/environments/**

@@ -1,0 +1,16 @@
+@import '../../assets/scss/base';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  width: 100vw;
+  height: 100vh;
+  background: url(/assets/images/hero-bg.jpg) no-repeat;
+  background-size: cover;
+
+  @include media-breakpoint-down(lg)  {
+    background-position: -350px bottom;
+  }
+}
