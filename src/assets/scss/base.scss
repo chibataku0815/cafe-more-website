@@ -1,5 +1,10 @@
+$theme-colors: (
+  "dark": #080705, "dark-darken-1": darken(#3C3D42, 10%),"dark-lighten-1": lighten(#3C3D42, 10%),
+);
+
 @import 'bootstrap/scss/_functions.scss';
 @import 'bootstrap/scss/_variables.scss';
 @import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/_forms.scss';
 @import 'bootstrap/scss/_grid.scss';
 @import 'bootstrap/scss/_utilities.scss';

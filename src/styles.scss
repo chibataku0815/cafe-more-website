@@ -19,7 +19,7 @@ body {
 .title {
   position: relative;
   font-family:  'Oswald';
-  font-size: 44px;
+  font-size: 64px;
   font-weight: bold;
   line-height: 1.4;
   font-feature-settings: "palt";
@@ -45,11 +45,31 @@ body {
     position: absolute;
     padding: 3px 5px;
     width: 100%;
-    height: 45px;
+    height: 70%;
     background: white;
     left: 0;
     bottom: 2px;
     z-index: -1;
+  }
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  max-width: 100%;
+  color: darken(#3C3D42, 10%);;
+  font-size: 22px;
+  font-weight: bold;
+  background: lighten(#3C3D42, 50%);
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#3C3D42, 10%);
+  }
+
+  &:disabled {
+    background: darken(#3C3D42, 30%);
   }
 }
 
