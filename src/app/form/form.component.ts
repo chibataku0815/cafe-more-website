@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '@env/environment';
-import { FormControl, FormGroup, Validators, ErrorMessage } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -13,7 +13,7 @@ export class FormComponent implements OnInit {
 
   formGroup: FormGroup;
 
-  customErrorMessages: ErrorMessage[] = [
+  customErrorMessages: any = [
     {
       error: 'required',
       format: (label, error) => `${label.toUpperCase()} は必須項目です`
