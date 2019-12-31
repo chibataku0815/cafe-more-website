@@ -24,10 +24,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.meta.addTags([
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'og:title', content: 'サンプル' },
-      { name: 'og:description', content: 'これはサンプルです。' },
-      { name: 'og:image', content: 'http://sample.com/sample.png' }
+      {
+        name: 'title',
+        content: 'キッチンカー（移動販売車）| Food Truck Cafe more カフェモア'
+      },
+      {
+        name: 'description',
+        content: 'キッチンカー（移動販売車）東京・埼玉・千葉・関東で出店・ケータリング！天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております'
+      },
     ]);
     WebFont.load({
       custom: {
