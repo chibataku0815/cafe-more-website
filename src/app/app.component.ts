@@ -13,7 +13,7 @@ console.log('test in');
 
 
 export class AppComponent implements OnInit {
-  title = 'cafe-more-websaite';
+  title = 'cafe-more-website';
 
   constructor(private meta: Meta) { }
 
