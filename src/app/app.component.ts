@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import * as WebFont from 'webfontloader';
 import { environment } from '@env/environment';
 
 console.log('test in');
@@ -32,19 +31,11 @@ export class AppComponent implements OnInit {
         name: 'description',
         content: 'キッチンカー（移動販売車）東京・埼玉・千葉・関東で出店・ケータリング！天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております'
       },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'og:title', content: 'Food Truck Cafe more カフェモアfirebase' },
+      { name: 'og:description', content: 'キッチンカー（移動販売車）東京・埼玉・千葉・関東で出店・ケータリング！天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております' },
+      { name: 'og:image', content: 'http://sample.com/sample.png' }
     ]);
-    WebFont.load({
-      custom: {
-        families: [
-          'Noto Sans JP',
-          'Oswald'
-        ],
-        urls: [
-          'https://fonts.googleapis.com/css?family=Noto+Sans+JP',
-          'https://fonts.googleapis.com/css?family=Oswald&display=swap'
-        ]
-      }
-    });
   }
 }
 

@@ -22,7 +22,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     library: 'app',
     libraryTarget: 'umd',
-    filename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     noParse: /polyfills-.*\.js/,
