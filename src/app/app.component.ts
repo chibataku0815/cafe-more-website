@@ -17,8 +17,8 @@ export class AppComponent implements OnInit {
   constructor(private meta: Meta) { }
 
   debug(): void {
-    const chiba = window;
-    console.log(chiba);
+    // const chiba = window;
+    // console.log(chiba);
   }
 
   ngOnInit() {
@@ -35,11 +35,10 @@ export class AppComponent implements OnInit {
       { name: 'og:title', content: 'Food Truck Cafe more カフェモアfirebase' },
       { name: 'og:description', content: 'キッチンカー（移動販売車）東京・埼玉・千葉・関東で出店・ケータリング！天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております' },
       { name: 'og:image', content: 'https://cafe-more.jp/assets/images/ogp.jpg' },
-      { name: 'og:image', content: '/assets/images/ogp.jpg' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ]);
   }
 }
 
-console.log(environment);
+// console.log(environment);
 
