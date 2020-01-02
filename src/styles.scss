@@ -1,5 +1,6 @@
 @import '~reset-css/sass/reset';
 @import './assets/scss/base';
+@import '~magic.css/assets/scss/magic';
 
 * {
   box-sizing: border-box;
@@ -70,6 +71,9 @@ body {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 50px;
   max-width: 100%;
@@ -92,4 +96,10 @@ body {
 
 .kerning {
   letter-spacing: 5px;
+}
+
+@for $value from 1 through 10 {
+	.duration-#{$value} {
+		animation-duration: 1s * $value !important;
+	}
 }

@@ -8,10 +8,10 @@
         </h1>
       </div>
       <div class="col-12 col-md-8">
-        <div class="sub-title -ja text-white mt-md-5 mb-5">出店場所や出店依頼・ご質問などお気軽にご相談ください</div>
+        <div class="sub-title -ja text-white mt-md-5 mb-5" *ngIf="!isSend">出店場所や出店依頼・ご質問などお気軽にご相談ください</div>
       </div>
     </div>
-    <form [formGroup]="formGroup" (validSubmit)="onSubmit()" class="row">
+    <form [formGroup]="formGroup" (validSubmit)="onSubmit()" class="row" *ngIf="!isSend">
       <div class="col-12">
         <div class="form-group">
           <label class="text-dark-lighten-1" for="name">Name</label>
@@ -39,6 +39,21 @@
         </div>
       </div>
     </form>
+    <div class="form-inner" *ngIf="isSend">
+      <div class="row vanishIn duration-2">
+        <div class="col-12 col-md-8 mx-auto">
+          <div class="sub-title -ja text-white py-5">
+            お問い合わせが完了しました。
+            <br>
+            このたびはお問い合わせいただきありがとうございます。
+            <br>
+            2営業日以内に、担当者よりご連絡いたしますので今しばらくお待ちくださいませ。
+          </div>
+          <hr>
+          <div class="btn mx-auto my-5" (click)="showToggle()">送信画面に戻る</div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="form-img-section">
 

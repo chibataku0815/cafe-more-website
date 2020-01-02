@@ -32,6 +32,7 @@
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.1",
     "express": "^4.17.1",
+    "magic.css": "^1.4.5",
     "ng-bootstrap-form-validation": "^5.0.0",
     "reset-css": "^5.0.1",
     "rxjs": "~6.5.4",

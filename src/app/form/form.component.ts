@@ -12,6 +12,7 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   formGroup: FormGroup;
+  isSend = false;
 
   customErrorMessages: any = [
     {
@@ -34,17 +35,25 @@ export class FormComponent implements OnInit {
     });
   }
 
+  showToggle() {
+    if (this.isSend) {
+      this.isSend = false;
+    }
+  }
+
   onSubmit() {
     console.log(this.formGroup);
     const url = environment.slackWebHooks;
     const data = {
       type: 'mrkdwn',
-      text: `Cafe More Webサイトからのお問合せ \n 名前: ${this.formGroup.value.Name} \n メールアドレス${this.formGroup.value.Email} \n お問い合せ内容: ${this.formGroup.value.DetailContent} \n `
+      text: `@here Cafe More Webサイトからのお問合せ \n 名前: ${this.formGroup.value.Name} \n メールアドレス${this.formGroup.value.Email} \n お問い合せ内容: ${this.formGroup.value.DetailContent} \n `
     };
     const xml = new XMLHttpRequest();
     xml.open('POST', url, false);
     xml.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
     xml.send(`payload=${JSON.stringify(data)}`);
+
+    this.isSend = true;
   }
 
 }
