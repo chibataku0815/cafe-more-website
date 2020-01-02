@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InViewportModule } from 'ng-in-viewport';
 
 import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
@@ -20,7 +21,8 @@ import { AboutComponent } from './about/about.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
     ReactiveFormsModule,
-    NgBootstrapFormValidationModule.forRoot()
+    NgBootstrapFormValidationModule.forRoot(),
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

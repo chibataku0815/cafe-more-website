@@ -1,10 +1,18 @@
 <div class="hero">
-  <div class="container">
-    <div class="sub-title -ja -big">進化する移動カフェ</div>
-    <h1 class="title -big">
-      <span class="text-marker -big">MORE THAN</span>
-      <br class="">
-      <span class="text-marker -big">A CAFE TRUCK</span>
-    </h1>
+  <div class="hero-inner read-line" inViewport (inViewportAction)="onIntersection($event)">
+    <div class="container">
+      <div [class.fadeIn]="readFlg" class="sub-title -ja -big animated delay-4s">進化する移動カフェ</div>
+      <h1 class="title -big">
+        <span class="text-marker -big">
+          <span [class.fadeIn]="readFlg" class="animated">MORE </span>
+          <span [class.fadeIn]="readFlg" class="animated delay-1s">THAN</span>
+        </span>
+        <br class="">
+        <span class="text-marker -big -delay">
+          <span [class.fadeIn]="readFlg" class="animated delay-2s">CAFE </span>
+          <span [class.fadeIn]="readFlg" class="animated delay-3s">TRUCK</span>
+        </span>
+      </h1>
+    </div>
   </div>
 </div>

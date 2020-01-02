@@ -2,10 +2,19 @@
 
 .about {
   padding: 150px 0 0;
+  // background: linear-gradient(45deg,white 0%,white 70%,map-get($theme-colors, dark) 50%,map-get($theme-colors, dark) 100%);
+
+  @include media-breakpoint-down(md)  {
+    // background: linear-gradient(90deg, white 0%, white 90%, map-get($theme-colors, dark) 50%, map-get($theme-colors, dark) 100%);
+  }
 }
 
 .about-img {
-  border: 15px solid black;
+  border: 15px solid map-get($theme-colors, dark);
+
+  @include media-breakpoint-down(md)  {
+    border: none;
+  }
 }
 
 .gif-section {

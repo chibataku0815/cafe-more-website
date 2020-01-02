@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  onView = new EventEmitter<number>();
+  readFlg = false;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  onIntersection({ visible }: { visible: boolean }) {
+    if (this.readFlg || !visible) {
+      return;
+    }
+    this.readFlg = true;
   }
 
 }

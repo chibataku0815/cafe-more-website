@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import { environment } from '@env/environment';
+// import { environment } from '@env/environment';
+
 
 console.log('test in');
 

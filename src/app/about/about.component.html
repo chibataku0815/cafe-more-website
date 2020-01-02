@@ -1,17 +1,25 @@
 <div class="about">
-  <div class="container">
+  <div
+    class="container" inViewport (inViewportAction)="onIntersection($event)"
+  >
     <div class="row">
-      <div class="col-12 col-md-5">
+      <div class="col-12 col-lg-5">
         <div class="sub-title -ja">天然酵母パン</div>
         <h1 class="title ">
-          <span class="">Natural yeast bread</span>
+          <span class="">
+            <span [class.vanishIn]="readFlg" class="animated duration-1"></span>Natural
+            <span [class.vanishIn]="readFlg" class="animated duration-2"></span>yeast
+            <span [class.vanishIn]="readFlg" class="animated duration-3"></span>bread
+          </span>
         </h1>
         <div class="sub-title -ja d-none d-md-block mt-5">
           天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております
         </div>
       </div>
-      <div class="col-12 col-md-7">
-        <img src="/assets/images/about-img.jpg" alt="" class="about-img w-100">
+      <div class="col-12 col-lg-7">
+        <img src="/assets/images/about-img.jpg" alt="" class="about-img w-100 animated" [class.vanishIn]="readFlg">
+      </div>
+      <div class="col-11 col-lg-7">
         <div class="sub-title -ja d-block d-md-none">
           天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております
         </div>
