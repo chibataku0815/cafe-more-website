@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
       { name: 'og:description', content: 'キッチンカー（移動販売車）東京・埼玉・千葉・関東で出店・ケータリング！天然酵母パンを使用したオリジナルホットドッグ！無添加ソーセージを使用したオーガニックドッグや旬に応じたデイリーメニューなど豊富に提供しております' },
       { name: 'og:image', content: 'https://cafe-more.jp/assets/images/ogp.jpg' },
       { name: 'og:image', content: '/assets/images/ogp.jpg' },
-      { name: 'twitter:card', content: 'summary' }
+      { name: 'twitter:card', content: 'summary_large_image' }
     ]);
   }
 }
