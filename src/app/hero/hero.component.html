@@ -1,6 +1,6 @@
 <div class="hero">
-  <div class="hero-inner read-line" inViewport (inViewportAction)="onIntersection($event)">
-    <div class="container" *ngif="">
+  <div class="hero-inner" inViewport (inViewportAction)="onIntersection($event)">
+    <div class="container" *ngIf="readFlg">
       <div [class.fadeIn]="readFlg" class="sub-title -ja -big animated delay-4s">進化する移動カフェ</div>
       <h1 class="title -big">
         <span class="text-marker -big">
