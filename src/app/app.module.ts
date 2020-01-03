@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 
 import { NgBootstrapFormValidationModule } from 'ng-bootstrap-form-validation';
 import { AboutComponent } from './about/about.component';
+import { ScrollIconComponent } from './scroll-icon/scroll-icon.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AboutComponent } from './about/about.component';
     HeroComponent,
     FormComponent,
     AboutComponent,
+    ScrollIconComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
