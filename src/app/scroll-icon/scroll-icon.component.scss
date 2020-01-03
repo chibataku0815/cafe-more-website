@@ -1,6 +1,13 @@
+@import '../../assets/scss/base';
+
+
 .scroll-icon {
   position: fixed;
   bottom: 0;
-  left: 0px;
+  right: 2vw;
   z-index: 10;
+
+  @include media-breakpoint-down(md)  {
+    right: 0px;
+  };
 }
