@@ -32,7 +32,7 @@
     "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "intersection-observer": "^0.7.0",
     "magic.css": "^1.4.5",
     "ng-bootstrap-form-validation": "^5.0.0",
